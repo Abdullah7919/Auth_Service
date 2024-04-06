@@ -6,6 +6,9 @@ const apiRoutes=require('./routes/index');
 // const { User }=require('./models/index');
 // const bcrypt=require('bcrypt');
 
+// const UserRepository=require('./repository/user-repository');
+// const userRepository=new UserRepository();
+
 const app=express();
 
 const prepareAndStart=async()=>{
@@ -19,6 +22,8 @@ const prepareAndStart=async()=>{
         // const user=await User.findByPk(3);
         // const response=bcrypt.compareSync(inputPassword,user.password);
         // console.log(response);
+        // const user=await userRepository.getById(3);
+        // console.log(user);
         
     })
 }
