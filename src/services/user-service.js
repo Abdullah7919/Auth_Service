@@ -90,6 +90,16 @@ class UserService{
             throw error;
         }
     }
+
+    async isAdmin(userId){
+        try {
+            const response=await this.userRepository.isAdmin(userId);
+            return response;
+        } catch (error) {
+            console.log("Somethin went wrong in validating admin");
+            throw error;
+        }
+    }
 }
 
 module.exports=UserService;
